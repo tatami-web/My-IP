@@ -1,9 +1,8 @@
 # My-IP
 
-=======
 <div align="center">
-<img src="./media/icon.png">
-<h1>My IP</h1>
+  <img src="./media/icon.png" style="border-radius: 50%; width: 200px; height: 200px;">
+  <h1>My IP</h1>
 </div>
 
 "My IP" is a lightweight Android application designed to quickly display your current IP address and its associated country flag. It is ideal for users who want real-time information about their internet connection, whether they are using Wi-Fi, mobile networks, VPNs, or proxies.
@@ -28,4 +27,5 @@
 
 <img src="./media/01.png" width="250"> <img src="./media/02.png" width="250"> <img src="./media/03.png" width="250">
 
-<img src="./media/04.png" width="250"> <img src="./media/05.png" width="250"> <img src="./media/06.png" width="250"> <img src="./media/07.png" width="250">
+<img src="./media/04.png" width="250"> <img src="./media/05.png" width="250"> <img src="./media/06.png" width="250">
+
