@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Colocar los elementos en columna */
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto claro */
+  border: 4px solid #333;
+  border-radius: 10px;
+}
+
+/* Estilos para el contenedor principal */
+#app-container {
+  display: flex;
+  flex-direction: column; /* Colocar elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center; /* Centrar elementos verticalmente */
+  width: 100%; /* Ancho completo para evitar scroll */
+  max-width: 700px; /* Ancho máximo del contenedor */
+  height: auto; /* Permitir que el contenedor ajuste su altura */
+  position: relative; /* Necesario para posicionar el baúl arriba del botón */
+}
+
+/* Estilos para el contenido principal */
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+ /* border: 3px solid #333;*/
+  border-radius: 15px;
+  width: calc(100% - 40px); /* Ajusta el ancho con margen lateral */
+}
+
+/* Estilos para la bandera (puedes mantener esto igual) */
+#flag {
+  width: auto; /* Ajustar automáticamente según el contenido */
+  height: auto; /* Mantener proporción */
+  margin: 10px; /* Margen alrededor de la bandera */
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+#info {
+  display: none; /* Inicialmente oculto, se mostrará al hacer clic en el botón */
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #333;
+  width: 500px; /* Cambiar a auto para mayor flexibilidad */
+  max-width: calc(100% - 40px); /* Ajusta el ancho máximo con margen lateral */
+  height: auto; 
+  max-height: calc(800vh); /* Altura máxima relativa a la ventana */
+  overflow-y: auto; /* Permitir desplazamiento si es necesario */
+  position: fixed; /* Fija el baúl en la pantalla */
+  top: 110px; /* Mueve el baúl a la parte superior de la pantalla */
+  left:50%;
+  transform: translateX(-50%); /* Centra horizontalmente el baúl */
+}
+
+/* Estilos para los encabezados y párrafos */
+h2 {
+    font-size: clamp(24px, 5vw, 30px); /* Tamaño responsivo del encabezado */
+}
+
+p {
+    font-size: clamp(16px, 4vw, 20px); /* Tamaño responsivo del texto del párrafo */
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Estilos para botones */
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: clamp(16px, 4vw, 18px); /* Tamaño responsivo del botón */
+    cursor: pointer;
+    background-color: #303030; /* Color de fondo mejorado */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .3s, transform .2s;
+    text-decoration: none;
+
+}
+
+button:hover {
+  background-color: #535353; /* Color al pasar el cursor */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+#toggle-info {
+  padding: 12px 20px;
+  font-size: clamp(16px, 4vw, 18px);
+  cursor: pointer;
+  background-color: #303030;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  position: fixed;
+  top: 10px; /* Ajusta según el espacio deseado desde la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta el botón para que esté centrado */
+  z-index: 1000;
+}
+
+#toggle-info:hover {
+  background-color: #535353; /* Color al pasar el cursor */
+  transform: translateX(-50%) scale(1.05); /* Efecto de agrandamiento sin mover su posición */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: transparent;
+    position: fixed;
+    bottom: -10px; /* Ajustar para que no cubra contenido */
+    width: calc(100% - 20px); /* Ajustar ancho con margen lateral */
+    text-align: center;
+    padding:15px;
+}
+
+footer p {
+    color:#666;
+    font-size:.75rem; /* Tamaño responsivo del pie de página */    
+}
+
+/* Spinner para la carga de IP */
+#ipLoaderSpinner {
+  border: 15px solid rgba(0, 0, 0, 0.1); /* Borde de color gris claro */
+  border-top: 15px solid #0097fc; /* Color azul para la animación */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spinAnimation 1s linear infinite;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Para mostrarlo por encima de otros elementos */
+}
+
+@keyframes spinAnimation {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
