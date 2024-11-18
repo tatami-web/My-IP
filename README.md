@@ -3,7 +3,6 @@
 <div align="center">
 
   <img src="./media/icon.png" style="width: 200px; height: 200px;">
-  <img src="./media/icon.png" style="border-radius: 50%; width: 200px; height: 200px;">
 
   <h1>My IP</h1>
 </div>
