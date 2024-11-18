@@ -40,5 +40,3 @@
 - Optimized for use with or without VPN/proxy connections
 - Dynamic handling of API requests with a refresh control to avoid overloading
 - Enhanced support for mobile and tablet devices
-<<<<<<< HEAD
-=======
