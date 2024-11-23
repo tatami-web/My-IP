@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/media/icon.png">
     <title>My IP</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Contenedor principal de la aplicación -->
     <div id="app-container">
-        <!-- Contenedor para la información desplegable -->
-        <div id="info">
-            <h2>Usage Information</h2>
-            <p>This app helps you interact with your IP information.</p>
-            <h3>Key Benefits</h3>
-            <ul>
-                <li>Does not have storage permission</li>
-                <li>No data collected or stored</li>
-                <li>Simple, easy-to-use interface</li>
-                <li>Accurate IP address display</li>
-            </ul>
-            <h3>Additional Features</h3>
-            <ul>
-                <li>The flag icon will display your country's flag based on your IP location.</li>
-                <li>Use this tool to quickly access your IP and country information.</li>
-            </ul>
-            <button id="additional-button">
-                <a target="_blank" href="https://tatami-web.github.io/tatami/">Report bugs</a>
-            </button>
-        </div>
-        <!-- Contenedor principal del contenido -->
-        <div id="content">
-            <button id="toggle-info">Show Information</button>
-            <h2>My IP:</h2>
-            <p id="ip"></p>
-            <img id="flag" src="" alt="Bandera" style="display:none;">
-            <p id="countryName" style="display:none;"></p>
-            <button title="Copiar IP" id="copyBtn">Copy IP</button>
-            <button id="refreshBtn">Refresh</button>
-        </div>
+      <!-- Contenedor para la información desplegable -->
+      <div id="info">
+        <h2>Usage Information</h2>
+        <p>This app helps you interact with your IP information.</p>
+        <h3>Key Benefits</h3>
+        <ul>
+          <li>Does not have storage permission</li>
+          <li>No data collected or stored</li>
+          <li>Simple, easy-to-use interface</li>
+          <li>Accurate IP address display</li>
+        </ul>
+        <h3>Additional Features</h3>
+        <ul>
+          <li>
+            The flag icon will display your country's flag based on your IP
+            location.
+          </li>
+          <li>
+            Use this tool to quickly access your IP and country information.
+          </li>
+        </ul>
+        <button id="additional-button">
+          <a target="_blank" href="https://tatami-web.github.io/tatami/">Report bugs</a>
+        </button>
+      </div>
+      <!-- Contenedor principal del contenido -->
+      <div id="content">
+        <button id="toggle-info">Show Information</button>
+        <h2>My IP:</h2>
+        <p id="ip"></p>
+        <img id="flag" src="" alt="Bandera" style="display: none" />
+        <p id="countryName" style="display: none"></p>
+        <button title="Copy IP" id="copyBtn">Copy IP</button>
+        <button title="Refresh IP" id="refreshBtn">Refresh</button>
+      </div>
     </div>
     <!-- Footer de créditos -->
     <footer>
-        <p>My IP</p>
-        <p>Developed by: &#64;Tatami</p>
+      <p>My IP</p>
+      <p>Developed by: &#64;Tatami</p>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

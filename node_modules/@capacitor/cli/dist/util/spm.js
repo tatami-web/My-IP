@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.generatePackageFile = exports.findPackageSwiftFile = exports.checkPackageManager = void 0;
 const utils_fs_1 = require("@ionic/utils-fs");
 const path_1 = require("path");
+const common_1 = require("../common");
 const log_1 = require("../log");
 async function checkPackageManager(config) {
     const iosDirectory = config.ios.nativeProjectDirAbs;
@@ -21,7 +22,7 @@ async function generatePackageFile(config, plugins) {
     const packageSwiftFile = await findPackageSwiftFile(config);
     try {
         log_1.logger.warn('SPM Support is still experimental');
-        const textToWrite = generatePackageText(config, plugins);
+        const textToWrite = await generatePackageText(config, plugins);
         (0, utils_fs_1.writeFileSync)(packageSwiftFile, textToWrite);
     }
     catch (err) {
@@ -29,8 +30,9 @@ async function generatePackageFile(config, plugins) {
     }
 }
 exports.generatePackageFile = generatePackageFile;
-function generatePackageText(config, plugins) {
+async function generatePackageText(config, plugins) {
     var _a, _b, _c;
+    const iosPlatformVersion = await (0, common_1.getCapacitorPackageVersion)(config, config.ios.name);
     const pbx = (0, utils_fs_1.readFileSync)((0, path_1.join)(config.ios.nativeXcodeProjDirAbs, 'project.pbxproj'), 'utf-8');
     const searchString = 'IPHONEOS_DEPLOYMENT_TARGET = ';
     const iosVersion = pbx.substring(pbx.indexOf(searchString) + searchString.length, pbx.indexOf(searchString) + searchString.length + 2);
@@ -47,7 +49,7 @@ let package = Package(
             targets: ["CapApp-SPM"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", branch: "main")`;
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", exact: "${iosPlatformVersion}")`;
     for (const plugin of plugins) {
         const relPath = (0, path_1.relative)(config.ios.nativeXcodeProjDirAbs, plugin.rootPath);
         packageSwiftText += `,\n        .package(name: "${(_a = plugin.ios) === null || _a === void 0 ? void 0 : _a.name}", path: "${relPath}")`;

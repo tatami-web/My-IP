@@ -41,7 +41,7 @@ async function buildiOS(config, buildOptions) {
 <plist version="1.0">
 <dict>
 <key>method</key>
-<string>app-store</string>
+<string>app-store-connect</string>
 </dict>
 </plist>`;
     const archivePlistPath = (0, path_1.join)(`${config.ios.nativeProjectDirAbs}`, 'archive.plist');

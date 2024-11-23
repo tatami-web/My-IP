@@ -10,8 +10,9 @@
   "license": "Apache-2.0",
   "description": "This app provides a convenient display of your current IP address, accompanied by a flag indicating your geolocation, giving you a quick glimpse into your online presence.",
   "dependencies": {
-    "@capacitor/cli": "^6.1.2",
-    "@capacitor/core": "^6.1.2",
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
     "@capacitor/splash-screen": "^6.0.2"
   }
 }
