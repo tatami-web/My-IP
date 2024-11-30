@@ -1,7 +1,7 @@
 # Description
 
 <div align="center">
-  <img src="./media/icon.png" style="width: 200px; height: 200px;">
+  <img src="./assets/icon.png" style="width: 200px; height: 200px;">
   <h1>My IP</h1>
 </div>
 
@@ -10,13 +10,13 @@
 ## Screenshots
 
 <div style="display: flex; justify-content: space-between; width: 100%;">
-  <img src="./media/01.png" alt="Image 6" style="width: 32%;"/>
-  <img src="./media/02.png" alt="Image 2" style="width: 32%;"/>
+  <img src="./assets/01.png" alt="Image 6" style="width: 32%;"/>
+  <img src="./assets/02.png" alt="Image 2" style="width: 32%;"/>
 </div>
 
 <div style="display: flex; justify-content: space-between; width: 100%;">
-  <img src="./media/03.png" alt="Image 3" style="width: 32%;"/>
-  <img src="./media/04.png" alt="Image 4" style="width: 32%;"/>
+  <img src="./assets/03.png" alt="Image 3" style="width: 32%;"/>
+  <img src="./assets/04.png" alt="Image 4" style="width: 32%;"/>
 </div>
 
 
@@ -35,3 +35,11 @@
 - Optimized for use with or without VPN/proxy connections.
 - Dynamic handling of API requests with a refresh control to avoid overloading.
 - Enhanced support for mobile and tablet devices.
+
+
+# Project Title
+
+Welcome to the project! See the following documentation for more details:
+- [Installation Instructions](INSTALLATION.md)
+- [Documentaiton](DOCUMENTATION.md)
+- [Usage Guide](README.md)
