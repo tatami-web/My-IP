@@ -5,11 +5,11 @@
   <h1>My IP</h1>
 </div>
 
-# Project My IP
+# My IP
 
 Welcome to the project! See the following documentation for more details:
 
-- [Installation Instructions](INSTALATION.md)
+- [Capacitor App Setup Guide](INSTALATION.md)
 
 - [ Documentation](DOCUMENTATION.md)
 
@@ -39,11 +39,13 @@ Welcome to the project! See the following documentation for more details:
 - Copy your IP address to the clipboard with a simple tap.
 - Designed with a simple and user-friendly interface for all users.
 
-#### Improvements
+# My IP
 
-- Faster and more reliable IP fetching with built-in network error handling.
-- Optimized for use with or without VPN/proxy connections.
-- Dynamic handling of API requests with a refresh control to avoid overloading.
-- Enhanced support for mobile and tablet devices.
+- [Capacitor App Setup Guide](INSTALATION.md)
 
+- [ Documentation](DOCUMENTATION.md)
+
+- [ Usage Guide](README.md)
+
+## ------------------------------------
 
