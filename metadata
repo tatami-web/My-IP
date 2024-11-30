@@ -1,0 +1,20 @@
+License: Apache-2.0
+SourceCode: https://github.com/tatami-web/My-IP
+IssueTracker: https://github.com/tatami-web/My-IP/issues
+Changelog: https://github.com/tatami-web/My-IP/releases
+Name: My IP
+Summary: Shows IP address and country flag based on IP
+Description: |
+  My IP is a lightweight Android application designed to quickly display your
+   current IP address and its associated country flag. It is ideal for users who 
+   want real-time information about their internet connection, whether they are using 
+   Wi-Fi, mobile networks, VPNs, or proxies.
+Builds:
+  - versionName: 1.0
+    versionCode: 1
+    commit: master
+    subdir: android
+    gradle:
+      - yes
+AutoUpdateMode: Version
+UpdateCheckMode: Tags

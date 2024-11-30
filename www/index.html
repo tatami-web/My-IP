@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A tool to display and interact with your IP information. Fast and secure."/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/media/icon.png" />
+
+    <!-- Título de la página -->
+    <title>My IP</title>
+
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div id="app-container">
+      <!-- Sección de información -->
+      <div id="info">
+        <h2>Usage Information</h2>
+        <p>
+          "My IP" is a lightweight Android application designed to quickly
+          display your current IP address and its associated country flag.
+        </p>
+
+        <!-- Beneficios clave -->
+        <h3>Key Benefits</h3>
+        <ul>
+          <li>Does not require storage permissions.</li>
+          <li>No data is collected or stored.</li>
+          <li>Simple, intuitive interface.</li>
+          <li>Accurate IP address display.</li>
+        </ul>
+
+        <!-- Funcionalidades adicionales -->
+        <h3>Additional Features</h3>
+        <ul>
+          <li>
+            It is ideal for users who want real-time information about their
+            internet connection, whether they are using Wi-Fi, mobile networks,
+            VPNs, or proxies.
+          </li>
+        </ul>
+
+        <!-- Botón para reportar errores -->
+        <button id="additional-button">
+          <a title="Report Bugs" target="_blank" href="https://tatami-web.github.io/tatami/">Report Bugs</a>
+        </button>
+      </div>
+
+      <!-- Contenedor del contenido principal -->
+      <div id="content">
+        <!-- Botón para mostrar u ocultar información -->
+        <button title="Information" id="toggle-info">Show Information</button>
+
+        <!-- Sección de visualización de IP -->
+        <h2>My IP:</h2>
+        <p id="ip"></p>
+
+        <!-- Bandera y nombre del país -->
+        <img id="flag" src="" alt="Country Flag" style="display: none" />
+        <p id="countryName" style="display: none"></p>
+
+        <!-- Botones de interacción -->
+        <button title="Copy IP" id="copyBtn">Copy IP</button>
+        <button title="Refresh IP" id="refreshBtn">Refresh</button>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>My IP</p>
+      <p>Developed by: &#64;Tatami</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

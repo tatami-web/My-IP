@@ -1,0 +1,176 @@
+/* Configuración básica: asegura que el box-sizing incluya padding y borde */
+* {
+  box-sizing: border-box;
+  user-select: none; /* Evita la selección de texto en todos los elementos */
+  -webkit-user-select: none; /* Compatibilidad con navegadores Webkit (Android) */
+  -ms-user-select: none; /* Compatibilidad con navegadores antiguos de Microsoft */
+  outline: none;  /* Elimina el borde de contorno (outline) que se muestra alrededor de un elemento cuando se selecciona o se enfoca con el teclado.*/
+
+}
+
+/* Estilo global del documento */
+html, body {
+  height: 100%; /* Ocupa toda la pantalla */
+  margin: 0; /* Elimina márgenes */
+  padding: 5px 5px 15px 5px; /* Espaciado interno */
+  font-family: Arial, sans-serif; /* Fuente legible */
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+  outline: none; 
+}
+
+/* Configuración del cuerpo principal */
+body {
+  display: flex; /* Estructura de diseño flexbox */
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  border: 4px solid #333; /* Bordes oscuros */
+  border-radius: 10px; /* Bordes redondeados */
+  outline: none;
+}
+
+/* Contenedor principal */
+#app-container {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  width: 100%; /* Ancho completo */
+  max-width: 700px; /* Máximo ancho */
+  height: auto; /* Altura ajustable */
+  position: relative; /* Necesario para posicionamiento relativo */
+  overflow: hidden; /* Evita desbordamiento */
+}
+
+/* Contenido principal */
+#content {
+  display: flex;
+  flex-direction: column; /* Columna para los elementos */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  width: calc(100% - 40px); /* Ajusta el ancho con márgenes */
+}
+
+/* Imagen de la bandera */
+#flag {
+  width: auto; /* Ajuste automático */
+  height: auto; /* Mantiene proporción */
+  margin: 10px; /* Margen externo */
+  border: 2px solid #333; /* Borde oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Información emergente (el baúl) */
+#info {
+  display: none; /* Inicialmente oculto, se mostrará al hacer clic en el botón */
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #333;  /* Bordes oscuros */
+  width: 500px; /* Cambiar a auto para mayor flexibilidad */
+  max-width: calc(100% - 40px); /* Ajusta el ancho máximo con margen lateral */
+  height: auto; 
+  max-height: calc(800vh); /* Altura máxima relativa a la ventana */
+  overflow-y: auto; /* Permitir desplazamiento si es necesario */
+  position: fixed; /* Fija el baúl en la pantalla */
+  top: 65px; /* Mueve el baúl a la parte superior de la pantalla */
+  left:50%; /* Centrado horizontal */
+  transform: translateX(-50%); /* Centra horizontalmente el baúl */
+}
+
+/* Encabezados y párrafos */
+h2 {
+  font-size: clamp(24px, 5vw, 30px); /* Tamaño adaptativo */
+}
+
+p {
+  font-size: clamp(16px, 4vw, 20px); /* Texto adaptativo */
+}
+
+/* Enlaces */
+a {
+  text-decoration: none; /* Sin subrayado */
+  color: #ffffff; /* Texto claro */
+}
+
+/* Botones */
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: clamp(16px, 4vw, 18px); /* Tamaño responsivo */
+  cursor: pointer;
+  background-color: #303030; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.2s; /* Animaciones */
+  outline: none; 
+}
+
+button:hover {
+  background-color: #535353; /* Fondo más claro al pasar el cursor */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Botón flotante para alternar información */
+#toggle-info {
+  padding: 12px 20px;
+  position: fixed; /* Fijado en pantalla */
+  top: 5px; /* Desde la parte superior */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrado */
+  z-index: 1000; /* Prioridad visual */
+  outline: none; 
+}
+
+/* Pie de página */
+footer {
+  background-color: transparent; /* Sin fondo */
+  position: fixed; /* Fijado en la parte inferior */
+  bottom: -10px; /* Posición ajustada */
+  width: calc(100% - 20px); /* Ancho ajustado */
+  text-align: center; /* Centrado */
+  padding: 35px;
+}
+
+footer p {
+  color: #666; /* Texto gris */
+  font-size: 0.75rem; /* Texto pequeño */
+  margin: 0;
+
+}
+
+/* Spinner de carga */
+#ipLoaderSpinner {
+  border: 15px solid rgba(0, 0, 0, 0.1); /* Fondo gris claro */
+  border-top: 15px solid #0097fc; /* Borde superior azul */
+  border-radius: 50%; /* Forma circular */
+  width: 100px; /* Ancho */
+  height: 100px; /* Altura */
+  animation: spinAnimation 1s linear infinite; /* Animación */
+  position: fixed; /* Fijado en pantalla */
+  top: 47%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Prioridad visual */
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  /* Media query oculta el footer en dispositivos móviles  Android 5*/
+  footer {
+    z-index: -1; /* Detrás de otros elementos */
+  }
+}
