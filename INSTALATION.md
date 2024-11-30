@@ -1,7 +1,17 @@
+# Instalation
+
 <div align="center">
   <img src="./assets/icon.png" style="width: 200px; height: 200px;">
   <h1>My IP</h1>
 </div>
+
+# Project My IP
+
+Welcome to the project! See the following documentation for more details:
+
+- [ Documentation](DOCUMENTATION.md)
+
+- [Usage Guide](README.md)
 
 # Capacitor Application Setup Guide
 
@@ -77,6 +87,5 @@ To verify the build:
 
 ## Resources
 - [Capacitor Documentation](https://capacitorjs.com/docs)
-- [F-Droid Submission Guide](https://f-droid.org/en/docs/Submitting_to_F-Droid/)
 - [Android Studio](https://developer.android.com/studio)
 - [Node.js](https://nodejs.org)

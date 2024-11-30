@@ -1,7 +1,17 @@
+# Documentation
+
 <div align="center">
   <img src="./assets/icon.png" style="width: 200px; height: 200px;">
   <h1>My IP</h1>
 </div>
+
+# Project My IP
+
+Welcome to the project! See the following documentation for more details:
+
+- [Installation Instructions](INSTALATION.md)
+
+- [Usage Guide](README.md)
 
 # Capacitor Application Setup Guide
 

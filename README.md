@@ -5,11 +5,20 @@
   <h1>My IP</h1>
 </div>
 
+# Project My IP
+
+Welcome to the project! See the following documentation for more details:
+
+- [Installation Instructions](INSTALATION.md)
+
+- [ Documentation](DOCUMENTATION.md)
+
 "My IP" is a lightweight Android application designed to quickly display your current IP address and its associated country flag. It is ideal for users who want real-time information about their internet connection, whether they are using Wi-Fi, mobile networks, VPNs, or proxies.
 
 ## Screenshots
 
 <div style="display: flex; justify-content: space-between; width: 100%;">
+  <img src="./assets/00.png" alt="Image 2" style="width: 32%;"/>
   <img src="./assets/01.png" alt="Image 6" style="width: 32%;"/>
   <img src="./assets/02.png" alt="Image 2" style="width: 32%;"/>
 </div>
@@ -17,6 +26,7 @@
 <div style="display: flex; justify-content: space-between; width: 100%;">
   <img src="./assets/03.png" alt="Image 3" style="width: 32%;"/>
   <img src="./assets/04.png" alt="Image 4" style="width: 32%;"/>
+  <img src="./assets/05.png" alt="Image 2" style="width: 32%;"/>
 </div>
 
 
@@ -37,9 +47,3 @@
 - Enhanced support for mobile and tablet devices.
 
 
-# Project Title
-
-Welcome to the project! See the following documentation for more details:
-- [Installation Instructions](INSTALATION.md)
-- [Documentaiton](DOCUMENTATION.md)
-- [Usage Guide](README.md)
