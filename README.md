@@ -47,5 +47,3 @@ Welcome to the project! See the following documentation for more details:
 
 - [ Usage Guide](README.md)
 
-## ------------------------------------
-
