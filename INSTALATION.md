@@ -5,7 +5,7 @@
 <h1>My IP</h1>
 </div>
 
-# My IP Project
+# Project
 
 Welcome to the project! Please refer to the following documentation for more details:
 
