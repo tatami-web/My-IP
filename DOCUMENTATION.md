@@ -5,15 +5,15 @@
   <h1>My IP</h1>
 </div>
 
-# Project My IP
+# Project
 
 Welcome to the project! See the following documentation for more details:
 
-- [Installation Instructions](INSTALATION.md)
+- [Capacitor App Setup Guide](INSTALATION.md)
 
 - [Usage Guide](README.md)
 
-# Capacitor Application Setup Guide
+# Setup Guide
 
 This guide explains how to set up and build a hybrid mobile application using Capacitor. It covers the installation of necessary dependencies, project creation, and steps to compile and test your application. This guide is designed for Linux environments.
 
@@ -222,8 +222,15 @@ If you encounter issues with Node.js, update it using one of the following metho
 
 ### Resources
 - [Capacitor Documentation](https://capacitorjs.com/docs)
+
 - [Android Studio](https://developer.android.com/studio)
+
 - [Node.js](https://nodejs.org)
+
+- [@capacitor/splash-screen](https://capacitorjs.com/docs/apis/splash-screen)
+
+- [Splash Screens and Icons](https://capacitorjs.com/docs/guides/splash-screens-and-icons)
+
 
 ---
 
