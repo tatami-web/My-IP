@@ -40,6 +40,6 @@
 # Project Title
 
 Welcome to the project! See the following documentation for more details:
-- [Installation Instructions](INSTALLATION.md)
+- [Installation Instructions](INSTALATION.md)
 - [Documentaiton](DOCUMENTATION.md)
 - [Usage Guide](README.md)
